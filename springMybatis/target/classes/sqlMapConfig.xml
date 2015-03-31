@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd" >
+<configuration>  <!---这个配置是给后面映射的类取别名，在后面使用就很方便-->
+    <typeAliases>
+        <typeAlias type="model.User" alias="User"/>
+    </typeAliases>
+    <!--这个配置是将映射文件加入进去-->
+    <mappers>
+        <package name="dao"/>
+    </mappers>
+</configuration>
